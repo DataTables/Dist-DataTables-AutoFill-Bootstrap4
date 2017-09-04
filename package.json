@@ -3,8 +3,8 @@
     "version": "2.2.1",
     "description": "AutoFill for DataTables with styling for [Bootstrap 4](http://getbootstrap.com/)",
     "files": [
-        "js/autoFill.bootstrap4.js",
-        "css/autoFill.bootstrap4.css"
+        "css/**/*.css",
+        "js/**/*.js"
     ],
     "main": "./js/autoFill.bootstrap4.js",
     "keywords": [
