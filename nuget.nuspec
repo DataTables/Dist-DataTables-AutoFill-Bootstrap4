@@ -15,11 +15,19 @@
             <dependency id="datatables.net-autofill" version="2.3.5"/>
             <dependency id="bootstrap" version="4.*"/>
         </dependencies>
+        <contentFiles>
+            <files include="**/*" buildAction="Content" />
+        </contentFiles>
     </metadata>
     <files>
-        <file src="js/autofill.bootstrap4.js"/>
-        <file src="js/autofill.bootstrap4.min.js"/>
-        <file src="css/autofill.bootstrap4.css"/>
-        <file src="css/autofill.bootstrap4.min.css"/>
+        <file src="js/autofill.bootstrap4.js" target="content\Script"/>
+        <file src="js/autofill.bootstrap4.min.js" target="content\Script"/>
+        <file src="css/autofill.bootstrap4.css" target="content\Content"/>
+        <file src="css/autofill.bootstrap4.min.css" target="content\Content"/>
+
+        <file src="js/autofill.bootstrap4.js" target="contentFiles\any\any\wwwroot\js"/>
+        <file src="js/autofill.bootstrap4.min.js" target="contentFiles\any\any\wwwroot\js"/>
+        <file src="css/autofill.bootstrap4.css" target="contentFiles\any\any\wwwroot\css"/>
+        <file src="css/autofill.bootstrap4.min.css" target="contentFiles\any\any\wwwroot\css"/>
     </files>
 </package>
