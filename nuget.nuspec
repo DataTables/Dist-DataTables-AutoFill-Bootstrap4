@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
-        <id>datatables.net-autofill-bs4</id>
         <version>2.3.6</version>
-        <description>AutoFill for DataTables</description>
+        <id>datatables.net-autofill-bs4</id>
+        <description>This is AutoFill for DataTables with styling for [Bootstrap4](https://getbootstrap.com/docs/4.6/getting-started/introduction/)</description>
+        <repository type="git" url="https://github.com/DataTables/Dist-DataTables-AutoFill-Bootstrap4.git"/>
         <authors>SpryMedia Ltd</authors>
         <projectUrl>http://datatables.net</projectUrl>
         <license type="expression">MIT</license>
-        <tags>autofill DataTables jQuery table Bootstrap4</tags>
-        <repository type="git" url="https://github.com/DataTables/Dist-DataTables-AutoFill-Bootstrap4.git"/>
+        <tags>AutoFill  Excel  Bootstrap  Bootstrap4  Datatables jQuery table</tags>
         <dependencies>
-            <dependency id="jquery" version="1.7.0"/>
-            <dependency id="datatables.net" version="1.10.15"/>
-            <dependency id="datatables.net-autofill" version="2.3.5"/>
-            <dependency id="bootstrap" version="4.*"/>
+            <dependency id="datatables.net-autofill" version=">=2.3.6"/>
+            <dependency id="datatables.net-bs4" version=">=1.10.24"/>
         </dependencies>
         <contentFiles>
-            <files include="**/*" buildAction="Content" />
+            <files include="**/*" buildAction="Content"/>
         </contentFiles>
     </metadata>
     <files>
-        <file src="js/autofill.bootstrap4.js" target="content\Script"/>
-        <file src="js/autofill.bootstrap4.min.js" target="content\Script"/>
-        <file src="css/autofill.bootstrap4.css" target="content\Content"/>
-        <file src="css/autofill.bootstrap4.min.css" target="content\Content"/>
-
-        <file src="js/autofill.bootstrap4.js" target="contentFiles\any\any\wwwroot\js"/>
-        <file src="js/autofill.bootstrap4.min.js" target="contentFiles\any\any\wwwroot\js"/>
-        <file src="css/autofill.bootstrap4.css" target="contentFiles\any\any\wwwroot\css"/>
-        <file src="css/autofill.bootstrap4.min.css" target="contentFiles\any\any\wwwroot\css"/>
+        <file src="js/autoFill.bootstrap4.js" target="content\Scripts"/>
+        <file src="js/autoFill.bootstrap4.js" target="contentFiles\any\any\wwwroot\js"/>
+        <file src="js/autoFill.bootstrap4.min.js" target="content\Scripts"/>
+        <file src="js/autoFill.bootstrap4.min.js" target="contentFiles\any\any\wwwroot\js"/>
+        <file src="css/autoFill.bootstrap4.css" target="content\Content"/>
+        <file src="css/autoFill.bootstrap4.css" target="contentFiles\any\any\wwwroot\css"/>
+        <file src="css/autoFill.bootstrap4.min.css" target="content\Content"/>
+        <file src="css/autoFill.bootstrap4.min.css" target="contentFiles\any\any\wwwroot\css"/>
+        <file src="types/autoFill.bootstrap4.d.ts" target="content\Scripts"/>
+        <file src="types/autoFill.bootstrap4.d.ts" target="contentFiles\any\any\wwwroot\js"/>
     </files>
 </package>
+
