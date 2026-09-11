@@ -5,7 +5,7 @@
     "module": "js/autoFill.bootstrap4.mjs",
     "style": "css/autoFill.bootstrap4.css",
     "types": "./types/autoFill.bootstrap4.d.ts",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "files": [
         "css/**/*.css",
         "js/**/*.js",
@@ -23,7 +23,7 @@
         "sort"
     ],
     "dependencies": {
-        "datatables.net-autofill": "3.0.0",
+        "datatables.net-autofill": "3.0.1",
         "datatables.net-bs4": "^3"
     },
     "author": {
