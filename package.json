@@ -1,16 +1,15 @@
 {
     "name": "datatables.net-autofill-bs4",
     "description": "AutoFill for DataTables with styling for [Bootstrap4](https://getbootstrap.com/docs/4.6/getting-started/introduction/)",
-    "main": "js/autoFill.bootstrap4.js",
-    "module": "js/autoFill.bootstrap4.mjs",
-    "style": "css/autoFill.bootstrap4.css",
+    "main": "./js/autoFill.bootstrap4.js",
+    "module": "./js/autoFill.bootstrap4.mjs",
+    "style": "./css/autoFill.bootstrap4.css",
     "types": "./types/autoFill.bootstrap4.d.ts",
     "version": "3.0.1",
     "files": [
-        "css/**/*.css",
-        "js/**/*.js",
-        "js/**/*.mjs",
-        "types/**/*.d.ts"
+        "js",
+        "css",
+        "types"
     ],
     "keywords": [
         "AutoFill",
@@ -36,5 +35,24 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/DataTables/AutoFill.git"
-    }
+    },
+    "exports": {
+        ".": {
+            "types": "./types/autoFill.bootstrap4.d.ts",
+            "import": "./js/autoFill.bootstrap4.mjs",
+            "default": "./js/autoFill.bootstrap4.mjs",
+            "require": "./js/autoFill.bootstrap4.js"
+        },
+        "./js/*": "./js/*",
+        "./css": {
+            "types": "./types/css.d.ts",
+            "default": "./css/autoFill.bootstrap4.css"
+        },
+        "./css/*": {
+            "types": "./types/css.d.ts",
+            "default": "./css/*"
+        },
+        "./package.json": "./package.json"
+    },
+    "sideEffects": true
 }
